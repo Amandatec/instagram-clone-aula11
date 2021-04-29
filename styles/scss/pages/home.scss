@@ -1,0 +1,22 @@
+@import "../styles.scss";
+
+
+header {
+    @include simple-flex(space-between, center, row);
+    min-height: 44px;
+    width: 100%;
+    background-color: $background-secundary;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+    .logo-img {
+        width: 105%;
+        height: auto;
+    }
+
+    .action-icon {
+        width: 24px;
+        height: auto;
+        cursor: pointer;
+    }
+}
