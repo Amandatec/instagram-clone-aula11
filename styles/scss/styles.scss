@@ -1,0 +1,11 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+* {
+    font-family: Arial;
+}
+
+html {
+    font-size: 10px;
+}
