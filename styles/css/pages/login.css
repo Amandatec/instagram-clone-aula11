@@ -43,7 +43,7 @@ header {
   flex-direction: column;
   height: 100%;
   /*para deixar no meio da tela*/
-  margin: 16px;
+  margin: 0 16px;
 }
 .login-container .form-container {
   display: flex;

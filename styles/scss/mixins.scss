@@ -1,4 +1,4 @@
-@mixin simple-flex ($justify: flex-start, $align: flex-start, $direction:row) {
+@mixin simple-flex ($justify: flex-start, $align: flex-start, $direction: row) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
