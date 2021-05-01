@@ -107,10 +107,31 @@ header .action-icon {
 
 .post-actions {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
-.post-actions img:last-child {
+.post-actions .action-icon {
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+}
+.post-actions .action-icon:last-child {
   margin-left: auto;
+}
+
+.likes-info {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 5px;
+  margin-bottom: 10px;
+}
+.likes-info .people-photo {
+  width: 27px;
+  height: 27px;
+  margin-right: 6.5px;
+  border-radius: 50%;
+}
+.likes-info .likes-quantity {
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=home.css.map */
