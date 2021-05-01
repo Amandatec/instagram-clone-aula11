@@ -51,4 +51,66 @@ header .action-icon {
   cursor: pointer;
 }
 
+.stories-container {
+  display: flex;
+  padding: 9px 10px;
+  gap: 20px;
+}
+.stories-container .story-item {
+  text-align: center;
+}
+.stories-container .story-img {
+  margin-bottom: 8px;
+}
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.feed-container .card-post {
+  display: flex;
+  flex-direction: column;
+}
+.feed-container .card-header {
+  display: flex;
+  padding: 11px 10px;
+}
+.feed-container .author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.feed-container .author-infos .author-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1.5px;
+}
+.feed-container .author-infos .author-location {
+  font-size: 1.1rem;
+}
+.feed-container .more-icon {
+  cursor: pointer;
+  margin-top: auto;
+  height: 3px;
+}
+
+.post-img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+.post-infos {
+  padding: 12px 15px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 20px;
+}
+.post-actions img:last-child {
+  margin-left: auto;
+}
+
 /*# sourceMappingURL=home.css.map */
