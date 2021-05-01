@@ -42,7 +42,7 @@ header {
   box-sizing: border-box;
 }
 header .logo-img {
-  width: 105%;
+  width: 105px;
   height: auto;
 }
 header .action-icon {
