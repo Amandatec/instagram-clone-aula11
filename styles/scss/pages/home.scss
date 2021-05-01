@@ -87,10 +87,41 @@ header {
 
 .post-actions {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 
-    img:last-child {
-        margin-left: auto;
+    .action-icon {
+        height: 20px;
+        width: auto;
+        cursor: pointer;
+
+        &:last-child {
+            margin-left: auto;
+
+        }
     }
+
+    
+}
+
+.likes-info {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 5px;
+    margin-bottom: 10px;
+
+    .people-photo {
+       width: 27px;
+       height: 27px;
+       margin-right: 6.5px;
+       border-radius: 50%;
+    }
+
+    .likes-quantity {
+        font-size: 1.3rem;
+    }
+
+.post-caption {
+    
+}
 }
 
