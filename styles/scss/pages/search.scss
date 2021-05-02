@@ -1,0 +1,42 @@
+@import "../styles.scss";
+
+.topo{
+     .top-bar{
+          position: absolute;
+          margin-top: 0;
+     }
+
+     .relogio {
+          margin: 14px 300px 16px 21px;
+          position: relative;
+     }
+}
+.retangulo {
+     width: 100%;
+     height: 79px;
+     bottom: 0;
+     position: fixed;
+}
+
+.galeria-fotos {
+     position: relative;
+     margin-top: 93px;
+     margin-bottom: 59px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     box-sizing: border-box;
+     justify-content: space-between;
+}
+
+.tab-bar {
+     position:fixed;
+     bottom: 0;
+}
+
+.end-line {
+     position: fixed;
+     bottom: 4px;
+     margin-top: 20px;
+     align-self: center;
+}
