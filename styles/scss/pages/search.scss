@@ -19,14 +19,13 @@
 }
 
 .galeria-fotos {
+     @include simple-flex (space-between, flex-start, row );
      position: relative;
      margin-top: 93px;
      margin-bottom: 59px;
      display: flex;
-     flex-direction: row;
      flex-wrap: wrap;
      box-sizing: border-box;
-     justify-content: space-between;
 }
 
 .tab-bar {
