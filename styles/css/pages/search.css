@@ -47,14 +47,16 @@ html {
 }
 
 .galeria-fotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
   position: relative;
   margin-top: 93px;
   margin-bottom: 59px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-content: space-between;
 }
 
 .tab-bar {
