@@ -58,6 +58,9 @@ html {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+.galeria-fotos:hover {
+  transition: 1s;
+}
 
 .tab-bar {
   position: fixed;

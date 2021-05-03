@@ -1,0 +1,48 @@
+@import "../styles.scss";
+
+.relogio {
+    margin: 14px 300px 56px 21px;
+}
+
+.texto-topo {
+    @include simple-flex (space-between, center, row);
+    font-size: 1.6rem;
+    
+    
+    .texto-claro {
+        color: rgba(0, 0, 0, 0.4);
+        margin: 11px 58px 12px 40px;
+    }
+
+    .you {
+        margin: 11px 71px 12px 80px;
+    }
+}
+
+.fl-request {
+    font-size: 1.5rem;
+    margin-left: 16px
+}
+
+.feed-news {
+    @include simple-flex (space-between, center, row);
+    margin: 0 16px 8px 16px;
+    position: relative;
+
+}
+.feed-texto {
+    font-size: 1.3rem;
+    margin: 13px 327px 21px 16px;
+}
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+}
+
+.end-line {
+    position: fixed;
+    bottom: 4px;
+    margin-top: 20px;
+    background-color: $background-secundary;
+}
