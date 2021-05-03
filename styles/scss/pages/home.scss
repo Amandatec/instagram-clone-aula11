@@ -101,8 +101,6 @@ header {
 
         }
     }
-
-    
 }
 
 .likes-info {
@@ -128,5 +126,20 @@ header {
     height: 79px;
     bottom: 0;
     position: fixed;
+}
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 32px;
+    padding-top: 11.75px;
+}
+
+.end-line {
+    position: fixed;
+    bottom: 4px;
+    margin-top: 20px;
+    margin-left: 130px;
+    background-color: $background-secundary;
 }
 
