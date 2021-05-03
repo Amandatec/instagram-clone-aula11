@@ -2,7 +2,7 @@
 
 
 header {
-    @include simple-flex(space-between, center, row);
+    @include simple-flex (space-between, center, row);
     min-height: 44px;
     width: 100%;
     background-color: $background-secundary;
@@ -22,7 +22,7 @@ header {
 }
 
 .stories-container {
-    display: flex;
+    @include simple-flex (flex-start, center, row);
     padding: 9px 10px;
     gap: 20px;
 
