@@ -26,6 +26,9 @@
      display: flex;
      flex-wrap: wrap;
      box-sizing: border-box;
+          &:hover {
+               transition: 1s;
+          }
 }
 
 .tab-bar {

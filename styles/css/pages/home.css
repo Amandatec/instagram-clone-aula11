@@ -61,9 +61,11 @@ header .action-icon {
 }
 .stories-container .story-item {
   text-align: center;
+  cursor: pointer;
 }
 .stories-container .story-img {
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .feed-container {
