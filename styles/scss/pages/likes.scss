@@ -19,6 +19,10 @@
     }
 }
 
+.line{
+    margin-left: 190px;
+}
+
 .fl-request {
     font-size: 1.5rem;
     margin-left: 16px
@@ -29,20 +33,47 @@
     margin: 0 16px 8px 16px;
     position: relative;
 
+    .feed-img {
+        padding-right: 4px;
+    }
+
+    span {
+        color:  rgba(0, 0, 0, 0.4);
+    }
+
+    a {
+        text-decoration: none;
+        color: $highLight-color;
+        text-align: center;
+    }
+
+    p {
+       padding-left:  12px ;
+       text-align: left;
+    }
+
+    .photo-coment {
+        margin-left: 13px;
+    }
+
 }
 .feed-texto {
     font-size: 1.3rem;
     margin: 13px 327px 21px 16px;
+    box-sizing: border-box;
 }
 
 .tab-bar {
     position: fixed;
     bottom: 0;
+    padding-bottom: 32px;
+    padding-top: 11.75px;
 }
 
 .end-line {
     position: fixed;
     bottom: 4px;
     margin-top: 20px;
+    margin-left: 130px;
     background-color: $background-secundary;
 }
