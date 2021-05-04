@@ -1,0 +1,14 @@
+@import "../styles.scss";
+
+.relogio {
+    margin: 14px 300px 56px 21px;
+}
+
+.barra-topo {
+    @include simple-flex (center, center, row);
+   margin-left: 6px;
+}
+.menu-icon {
+    display: flex;
+    justify-self: right;
+}
