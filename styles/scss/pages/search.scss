@@ -1,27 +1,40 @@
 @import "../styles.scss";
 
 .topo{
-     .top-bar{
-          position: absolute;
-          margin-top: 0;
-     }
 
      .relogio {
-          margin: 14px 300px 16px 21px;
-          position: relative;
+          margin-left: 21px;
+          margin-right: 16px;
+          position:relative;
+     }
+     .input-box{
+          width: 100%;
+          display: flex;
+          margin-left: 8px;
+
+          .input-search{
+               position: relative;
+               width: 327px;
+               height: 36px;
+               background: #7676801F;
+               border-radius: 10px
+          }
+
      }
 }
-.retangulo {
-     width: 100%;
-     height: 79px;
-     bottom: 0;
-     position: fixed;
+.live-icon {
+     align-items: center;
+}
+
+.options-insta {
+     @include simple-flex (space-between, center, row);
+     margin-left: 8px;
 }
 
 .galeria-fotos {
      @include simple-flex (space-between, flex-start, row );
      position: relative;
-     margin-top: 93px;
+     margin-top: 14px;
      margin-bottom: 59px;
      display: flex;
      flex-wrap: wrap;

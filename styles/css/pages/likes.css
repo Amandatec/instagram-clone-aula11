@@ -76,6 +76,7 @@ html {
   text-decoration: none;
   color: #3797ef;
   text-align: center;
+  cursor: pointer;
 }
 .feed-news p {
   padding-left: 12px;
