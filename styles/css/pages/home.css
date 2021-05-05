@@ -51,7 +51,7 @@ header .action-icon {
   cursor: pointer;
 }
 
-.stories-container {
+.bloco-topo .stories-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -59,11 +59,11 @@ header .action-icon {
   padding: 9px 10px;
   gap: 20px;
 }
-.stories-container .story-item {
+.bloco-topo .stories-container .story-item {
   text-align: center;
   cursor: pointer;
 }
-.stories-container .story-img {
+.bloco-topo .stories-container .story-img {
   margin-bottom: 8px;
   cursor: pointer;
 }
