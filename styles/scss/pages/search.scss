@@ -1,38 +1,79 @@
 @import "../styles.scss";
 
+body {
+     background-color: $background-secundary;
+}
 .topo{
-
      .relogio {
-          margin-left: 21px;
-          margin-right: 16px;
-          position:relative;
-     }
-     .input-box{
           width: 100%;
-          display: flex;
-          margin-left: 8px;
+          min-height: 50px;
+          margin-left: 0;
+          margin-right: 16px;       
+     }
 
-          .input-search{
-               position: relative;
-               width: 327px;
-               height: 36px;
-               background: #7676801F;
-               border-radius: 10px
+     .input-box{
+         
+          display: flex;
+          width: 327px;
+          height: 36px;
+          background: #7676801F;
+          box-sizing: border-box;
+          margin-left: 8px;
+          border-radius: 8px;
+          padding-left: 12.75px;
+          gap: 9.07px;
+         
+          .input-img {
+               width:13.68px;
+               height: 13.68px;
+               padding-top: 11.25px;            
           }
 
+          .input-search{
+               width: 302px;
+               height: 36px;
+               background: transparent;
+               border-radius: 10px;
+               border: none;
+               font-size: 1.6rem;
+               
+          }
+          
+         
+    
      }
 }
+
 .live-icon {
-     align-items: center;
+     display: block;
+     float: right;
+     margin-top: -30px;
+     padding-right: 10px
 }
 
 .options-insta {
-     @include simple-flex (space-between, center, row);
+     @include simple-flex (space-between center, row);
+     gap: 6px;
      margin-left: 8px;
+     font-size:1.4rem;
+     color: $text-color;
+     
+
+     .options-block {
+         
+          border:solid #3c3c432e ;
+          border-radius: 6px;
+          padding: 8px 10px 7px 10px;
+          border: lightgray solid;
+          border-width: thin;     
+          margin-top: 9px;
+          
+     }
 }
 
 .galeria-fotos {
      @include simple-flex (space-between, flex-start, row );
+     width: 100%;
      position: relative;
      margin-top: 14px;
      margin-bottom: 59px;
