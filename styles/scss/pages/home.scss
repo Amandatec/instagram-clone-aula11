@@ -4,10 +4,10 @@ header {
     @include simple-flex (space-between, center, row);
     min-height: 44px;
     width: 100%;
-    background-color: $background-secundary;
+    background-color: $background-primary;
     padding: 10px 10px;
     box-sizing: border-box;
-
+    
     .logo-img {
         width: 105px;
         height: auto;
@@ -20,41 +20,37 @@ header {
     }
 }
 
-
-.bloco-topo{
-    .stories-container {
-        display: flex;
-        padding: 9px 10px;
-        gap: 20px;
-        overflow-x: auto;/*rola na posição x apenas a sessão e não a página inteira*/
-        box-sizing: border-box;
+.stories-container {
+    display: flex;
+    padding: 9px 10px;
+    gap: 20px;
+    overflow-x: auto;/*rola na posição x apenas a sessão e não a página inteira*/
+    box-sizing: border-box;
     
-        .story-item {
-            text-align: center;
-            cursor: pointer;
+    .story-item {
+        text-align: center;
+        cursor: pointer;
 
-            .content-img {
-                width: 66px;
-                height: 66px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
-                position: relative;
-                margin-bottom: 4px;
+        .content-img {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
+            position: relative;
+            margin-bottom: 4px;
            
     
-                .story-img {
-                
-                cursor: pointer;
-                border: solid 2.5px white;
-                border-radius: 50px;
-                }
-            } 
+            .story-img {  
+            cursor: pointer;
+            border: solid 2.5px white;
+            border-radius: 50px;
+            }
         } 
-    }   
-}
+    } 
+}   
 
 .feed-container{
     display: flex;
