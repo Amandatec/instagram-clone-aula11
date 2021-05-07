@@ -23,9 +23,11 @@ header {
 
 .bloco-topo{
     .stories-container {
-        @include simple-flex (flex-start, center, row);
+        display: flex;
         padding: 9px 10px;
         gap: 20px;
+        overflow-x: auto;/*rola na posição x apenas a sessão e não a página inteira*/
+        box-sizing: border-box;
     
         .story-item {
             text-align: center;
