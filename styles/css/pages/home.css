@@ -63,9 +63,21 @@ header .action-icon {
   text-align: center;
   cursor: pointer;
 }
-.bloco-topo .stories-container .story-img {
-  margin-bottom: 8px;
+.bloco-topo .stories-container .story-item .content-img {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
+  position: relative;
+  margin-bottom: 4px;
+}
+.bloco-topo .stories-container .story-item .content-img .story-img {
   cursor: pointer;
+  border: solid 2.5px white;
+  border-radius: 50px;
 }
 
 .feed-container {

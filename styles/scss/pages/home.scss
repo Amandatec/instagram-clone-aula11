@@ -30,14 +30,28 @@ header {
         .story-item {
             text-align: center;
             cursor: pointer;
-        }
+
+            .content-img {
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(215deg, blue 10%, #fd1d1d, #fcb045);
+                position: relative;
+                margin-bottom: 4px;
+           
     
-        .story-img {
-            margin-bottom: 8px;
-            cursor: pointer;
-        }
-    }
-    
+                .story-img {
+                
+                cursor: pointer;
+                border: solid 2.5px white;
+                border-radius: 50px;
+                }
+            } 
+        } 
+    }   
 }
 
 .feed-container{

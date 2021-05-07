@@ -35,10 +35,7 @@ body {
 }
 
 .topo .relogio {
-  width: 100%;
-  min-height: 50px;
-  margin-left: 0;
-  margin-right: 16px;
+  margin: 14px 300px 22px 21px;
 }
 .topo .input-box {
   display: flex;
