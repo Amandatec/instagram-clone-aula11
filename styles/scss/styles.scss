@@ -15,8 +15,9 @@ html {
     width: 100%;
     min-height: 50px;
     background-color: $background-secundary;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     padding: 0 26px;
     box-sizing: border-box;
 }
+

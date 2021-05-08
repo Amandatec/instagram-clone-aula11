@@ -47,6 +47,8 @@ header {
             cursor: pointer;
             border: solid 2.5px white;
             border-radius: 50px;
+            width: 56px;
+            height: 56px;
             }
         } 
     } 
@@ -148,6 +150,12 @@ header {
     bottom: 0;
     padding-bottom: 32px;
     padding-top: 11.75px;
+
+    .iconeUsuario {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+    }
 }
 
 .end-line {

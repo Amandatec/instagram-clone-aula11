@@ -26,7 +26,7 @@ html {
   width: 100%;
   min-height: 50px;
   background-color: #f2f2f2;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   padding: 0 26px;
   box-sizing: border-box;
@@ -80,6 +80,8 @@ header .action-icon {
   cursor: pointer;
   border: solid 2.5px white;
   border-radius: 50px;
+  width: 56px;
+  height: 56px;
 }
 
 .feed-container {
@@ -165,6 +167,11 @@ header .action-icon {
   bottom: 0;
   padding-bottom: 32px;
   padding-top: 11.75px;
+}
+.tab-bar .iconeUsuario {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
 }
 
 .end-line {
