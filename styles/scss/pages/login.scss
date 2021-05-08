@@ -11,14 +11,26 @@ header {
     height: 100%;/*para deixar no meio da tela*/
     margin: 0 16px;
 
-    @media (min-width:768px){
+    @media (min-width:$breakpoint-tablet){
         flex-direction: row;
+        gap: 40px;
     }
 
+    .insta-mock {
+        display: none;
+
+        @media (min-width: $breakpoint-tablet) {
+            display: block;
+        }
+    }
     .form-container {
         display: flex;
         @include simple-flex (center, center, column);
         width: 100%;
+
+        @media (min-width: $breakpoint-tablet) {
+            max-width: 350px;/*largura max do container quando vira desktop*/
+        }
 
         .logo-img {
             width: 182px;
@@ -114,21 +126,21 @@ header {
 
         }
 
-        .bottomLogin {
+    .bottomLogin {
             @include simple-flex (center, center, column);
         
-            .facebook-area {
+        .facebook-area {
                 justify-content: space-between;
                 margin-bottom: 41px;
             
-                .facebook-login {
+            .facebook-login {
                     color: $highLight-color;
                     font-size: 1.4rem;
                     font-weight: bold;
                     margin-bottom: 41px;
-                }
             }
         }
+    }
     
 }
 
