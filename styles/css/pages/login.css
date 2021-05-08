@@ -46,6 +46,11 @@ header {
   /*para deixar no meio da tela*/
   margin: 0 16px;
 }
+@media (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+  }
+}
 .login-container .form-container {
   display: flex;
   display: flex;
@@ -103,16 +108,6 @@ header {
   margin-bottom: 38.5px;
   cursor: pointer;
 }
-.login-container .facebook-area {
-  justify-content: space-between;
-  margin-bottom: 41px;
-}
-.login-container .facebook-login {
-  color: #3797ef;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 41px;
-}
 .login-container p {
   font-size: 1.2rem;
   color: #262626;
@@ -142,6 +137,22 @@ header {
   width: 375px;
   height: 79px;
   margin-bottom: 0;
+}
+.login-container .bottomLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container .bottomLogin .facebook-area {
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+.login-container .bottomLogin .facebook-area .facebook-login {
+  color: #3797ef;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 41px;
 }
 
 /*# sourceMappingURL=login.css.map */

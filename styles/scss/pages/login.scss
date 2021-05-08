@@ -11,6 +11,10 @@ header {
     height: 100%;/*para deixar no meio da tela*/
     margin: 0 16px;
 
+    @media (min-width:768px){
+        flex-direction: row;
+    }
+
     .form-container {
         display: flex;
         @include simple-flex (center, center, column);
@@ -72,17 +76,7 @@ header {
         }
     }
 
-    .facebook-area {
-        justify-content: space-between;
-        margin-bottom: 41px;
-    }
-
-        .facebook-login {
-            color: $highLight-color;
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-bottom: 41px;
-        }
+    
 
     p {
         font-size: 1.2rem;
@@ -119,5 +113,22 @@ header {
             height: 79px;margin-bottom: 0;
 
         }
+
+        .bottomLogin {
+            @include simple-flex (center, center, column);
+        
+            .facebook-area {
+                justify-content: space-between;
+                margin-bottom: 41px;
+            
+                .facebook-login {
+                    color: $highLight-color;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    margin-bottom: 41px;
+                }
+            }
+        }
+    
 }
 
