@@ -12,3 +12,24 @@
     display: flex;
     justify-self: right;
 }
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 32px;
+    padding-top: 11.75px;
+
+    .iconeUsuario {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+    }
+}
+
+.end-line {
+    position: fixed;
+    bottom: 4px;
+    margin-top: 20px;
+    margin-left: 130px;
+    background-color: $background-secundary;
+}
