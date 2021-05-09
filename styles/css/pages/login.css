@@ -31,6 +31,11 @@ html {
   padding: 0 26px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  .tab-bar {
+    background-color: #fafafa;
+  }
+}
 
 header {
   margin: 14px 300px 56px 21px;
@@ -44,12 +49,12 @@ header {
   flex-direction: column;
   height: 100%;
   /*para deixar no meio da tela*/
-  margin: 0 16px;
 }
 @media (min-width: 768px) {
   .login-container {
     flex-direction: row;
     gap: 40px;
+    background-color: #f2f2f2;
   }
 }
 .login-container .insta-mock {
@@ -67,11 +72,16 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  padding: 0px 16px;
+  box-sizing: border-box;
 }
 @media (min-width: 768px) {
   .login-container .form-container {
     max-width: 350px;
     /*largura max do container quando vira desktop*/
+    background-color: #fafafa;
+    padding: 30px 40px;
+    border: 1px solid gray;
   }
 }
 .login-container .form-container .logo-img {
@@ -79,7 +89,6 @@ header {
   height: auto;
   /*important pra não desforcar a img, para manter a proporção*/
   margin-bottom: 39px;
-  margin-top: 168px;
 }
 .login-container .form-container .input-form {
   font-size: 1.4rem;
