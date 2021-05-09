@@ -37,6 +37,12 @@ html {
   }
 }
 
+@media (min_width: 768px) {
+  body {
+    background-color: #f2f2f2;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -59,10 +65,21 @@ header .action-icon {
 }
 
 main {
-  width: 100%;
+  max-width: 935px;
   box-sizing: border-box;
+  display: flex;
+  margin: auto;
 }
-main .stories-container {
+main .page-container {
+  padding: 20px;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  main .page-container {
+    width: 100%;
+  }
+}
+main .page-container .stories-container {
   display: flex;
   padding: 9px 10px;
   gap: 20px;
@@ -71,11 +88,11 @@ main .stories-container {
   box-sizing: border-box;
   width: 100%;
 }
-main .stories-container .story-item {
+main .page-container .stories-container .story-item {
   text-align: center;
   cursor: pointer;
 }
-main .stories-container .story-item .content-img {
+main .page-container .stories-container .story-item .content-img {
   width: 66px;
   height: 66px;
   border-radius: 50%;
@@ -86,86 +103,98 @@ main .stories-container .story-item .content-img {
   position: relative;
   margin-bottom: 4px;
 }
-main .stories-container .story-item .content-img .story-img {
+main .page-container .stories-container .story-item .content-img .story-img {
   cursor: pointer;
   border: solid 2.5px white;
   border-radius: 50px;
   width: 56px;
   height: 56px;
 }
-main .feed-container {
+main .page-container .feed-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-main .feed-container .card-post {
+main .page-container .feed-container .card-post {
   display: flex;
   flex-direction: column;
 }
-main .feed-container .card-header {
+main .page-container .feed-container .card-header {
   display: flex;
   padding: 11px 10px;
 }
-main .feed-container .author-img {
+main .page-container .feed-container .author-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
-main .feed-container .author-infos .author-name {
+main .page-container .feed-container .author-infos .author-name {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1.5px;
 }
-main .feed-container .author-infos .author-location {
+main .page-container .feed-container .author-infos .author-location {
   font-size: 1.1rem;
 }
-main .feed-container .more-icon {
+main .page-container .feed-container .more-icon {
   cursor: pointer;
   margin-top: auto;
   height: 3px;
 }
-main .feed-container .post-img {
+main .page-container .feed-container .post-img {
   width: 100%;
   height: 375px;
   object-fit: cover;
 }
-main .feed-container .end-line {
+main .page-container .feed-container .end-line {
   position: fixed;
   bottom: 4px;
   margin-top: 20px;
   margin-left: 130px;
   background-color: #f2f2f2;
 }
-main .post-infos {
+main .page-container .post-infos {
   padding: 12px 15px;
 }
-main .post-infos .post-actions {
+main .page-container .post-infos .post-actions {
   display: flex;
   gap: 15px;
 }
-main .post-infos .post-actions .action-icon {
+main .page-container .post-infos .post-actions .action-icon {
   height: 20px;
   width: auto;
   cursor: pointer;
 }
-main .post-infos .post-actions .action-icon:last-child {
+main .page-container .post-infos .post-actions .action-icon:last-child {
   margin-left: auto;
 }
-main .post-infos .likes-info {
+main .page-container .post-infos .likes-info {
   display: flex;
   align-items: center;
   padding: 12px 0 5px;
   margin-bottom: 10px;
 }
-main .post-infos .likes-info .people-photo {
+main .page-container .post-infos .likes-info .people-photo {
   width: 17px;
   height: 17px;
   margin-right: 6.5px;
   border-radius: 50%;
 }
-main .post-infos .likes-info .people-photo .likes-quantity {
+main .page-container .post-infos .likes-info .people-photo .likes-quantity {
   font-size: 1.3rem;
 }
+main .aside-container {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  main .aside-container {
+    display: none;
+  }
+}
+
 .tab-bar {
   position: fixed;
   bottom: 0;
