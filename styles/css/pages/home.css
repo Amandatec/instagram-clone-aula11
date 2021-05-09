@@ -58,19 +58,24 @@ header .action-icon {
   cursor: pointer;
 }
 
-.stories-container {
+main {
+  width: 100%;
+  box-sizing: border-box;
+}
+main .stories-container {
   display: flex;
   padding: 9px 10px;
   gap: 20px;
   overflow-x: auto;
   /*rola na posição x apenas a sessão e não a página inteira*/
   box-sizing: border-box;
+  width: 100%;
 }
-.stories-container .story-item {
+main .stories-container .story-item {
   text-align: center;
   cursor: pointer;
 }
-.stories-container .story-item .content-img {
+main .stories-container .story-item .content-img {
   width: 66px;
   height: 66px;
   border-radius: 50%;
@@ -81,92 +86,86 @@ header .action-icon {
   position: relative;
   margin-bottom: 4px;
 }
-.stories-container .story-item .content-img .story-img {
+main .stories-container .story-item .content-img .story-img {
   cursor: pointer;
   border: solid 2.5px white;
   border-radius: 50px;
   width: 56px;
   height: 56px;
 }
-
-.feed-container {
+main .feed-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.feed-container .card-post {
+main .feed-container .card-post {
   display: flex;
   flex-direction: column;
 }
-.feed-container .card-header {
+main .feed-container .card-header {
   display: flex;
   padding: 11px 10px;
 }
-.feed-container .author-img {
+main .feed-container .author-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
-.feed-container .author-infos .author-name {
+main .feed-container .author-infos .author-name {
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1.5px;
 }
-.feed-container .author-infos .author-location {
+main .feed-container .author-infos .author-location {
   font-size: 1.1rem;
 }
-.feed-container .more-icon {
+main .feed-container .more-icon {
   cursor: pointer;
   margin-top: auto;
   height: 3px;
 }
-
-.post-img {
+main .feed-container .post-img {
   width: 100%;
   height: 375px;
   object-fit: cover;
 }
-
-.post-infos {
+main .feed-container .end-line {
+  position: fixed;
+  bottom: 4px;
+  margin-top: 20px;
+  margin-left: 130px;
+  background-color: #f2f2f2;
+}
+main .post-infos {
   padding: 12px 15px;
 }
-
-.post-actions {
+main .post-infos .post-actions {
   display: flex;
   gap: 15px;
 }
-.post-actions .action-icon {
+main .post-infos .post-actions .action-icon {
   height: 20px;
   width: auto;
   cursor: pointer;
 }
-.post-actions .action-icon:last-child {
+main .post-infos .post-actions .action-icon:last-child {
   margin-left: auto;
 }
-
-.likes-info {
+main .post-infos .likes-info {
   display: flex;
   align-items: center;
   padding: 12px 0 5px;
   margin-bottom: 10px;
 }
-.likes-info .people-photo {
+main .post-infos .likes-info .people-photo {
   width: 17px;
   height: 17px;
   margin-right: 6.5px;
   border-radius: 50%;
 }
-.likes-info .likes-quantity {
+main .post-infos .likes-info .people-photo .likes-quantity {
   font-size: 1.3rem;
 }
-
-.retangulo {
-  width: 100%;
-  height: 79px;
-  bottom: 0;
-  position: fixed;
-}
-
 .tab-bar {
   position: fixed;
   bottom: 0;
@@ -177,14 +176,6 @@ header .action-icon {
   width: 23px;
   height: 23px;
   border-radius: 50%;
-}
-
-.end-line {
-  position: fixed;
-  bottom: 4px;
-  margin-top: 20px;
-  margin-left: 130px;
-  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=home.css.map */
