@@ -9,11 +9,11 @@ header {
     display: flex;
     @include simple-flex (center, center, column);
     height: 100%;/*para deixar no meio da tela*/
-    margin: 0 16px;
 
     @media (min-width:$breakpoint-tablet){
         flex-direction: row;
         gap: 40px;
+        background-color: $background-secundary;
     }
 
     .insta-mock {
@@ -27,16 +27,21 @@ header {
         display: flex;
         @include simple-flex (center, center, column);
         width: 100%;
+        padding: 0px 16px;
+        box-sizing: border-box;
+        
 
         @media (min-width: $breakpoint-tablet) {
             max-width: 350px;/*largura max do container quando vira desktop*/
+            background-color: $background-primary;
+            padding: 30px 40px;
+            border: 1px solid gray;
         }
 
         .logo-img {
             width: 182px;
             height: auto;/*important pra não desforcar a img, para manter a proporção*/ 
             margin-bottom: 39px;
-            margin-top: 168px;
         }
    
         .input-form {
