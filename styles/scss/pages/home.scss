@@ -3,6 +3,7 @@
 body {
     @media (min_width:$breakpoint-tablet){
         background-color: $background-secundary;
+       
     }
 }
 
@@ -13,6 +14,44 @@ header {
     background-color: $background-primary;
     padding: 10px 10px;
     box-sizing: border-box;
+
+    .input-form {
+        background-color:  $background-secundary;
+        border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 7px;
+            font-size: 1.4rem;
+        @media (max-width: $breakpoint-tablet) {
+            display: none;          
+        }
+    }
+    
+    @media (min_width: $breakpoint-tablet){
+        @include simple-flex (center, center, row);
+        background-color:#ffffff;
+        max-width: 50%;
+        gap: 20px;  
+        
+    }
+
+    .top-bar-desktop {
+        @include simple-flex (space-around, center, row);
+
+        @media (max-width: $breakpoint-tablet) {
+            display: none;
+            position: relative;
+            top: 0;
+            padding-bottom: 32px;
+            padding-top: 11.75px;
+        }
+        .iconeUsuario {
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+         }
+    }
+
+    
     
     .logo-img {
         width: 105px;
@@ -23,30 +62,48 @@ header {
         width: 24px;
         height: auto;
         cursor: pointer;
+
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
     }
 }
 
 main {
-    max-width: 935px;
-    box-sizing: border-box;
     display: flex;
+    max-width: 935px;
     margin: auto;
+    gap: 28px;
+    
+    @media (min-width: $breakpoint-tablet) {
+        padding-top: 30px; 
+        
+    } 
    
    .page-container {
-       padding: 20px;
-       width: 50%;
+    width:70%;
+    margin: auto;
+    box-sizing: border-box;
 
        @media (max-width: $breakpoint-tablet) {
-           width: 100%;
+        width: 100%;
+        margin: auto;
+          
        }
 
         .stories-container {
-                display: flex;
-                padding: 9px 10px;
-                gap: 20px;
-                overflow-x: auto;/*rola na posição x apenas a sessão e não a página inteira*/
-                box-sizing: border-box;
-                width: 100%;
+            display: flex;
+            padding: 9px 10px;
+            gap: 20px;
+            overflow-x: auto;/*rola na posição x apenas a sessão e não a página inteira*/
+            box-sizing: border-box;
+            width: 100%;
+
+            @media (min-width: $breakpoint-tablet) {
+                border: 1px solid rgba(219, 219, 219, 1);
+                background-color: $background-secundary;
+                margin-bottom: 24px;
+            }
                 
             .story-item {
                     text-align: center;
@@ -79,6 +136,12 @@ main {
             display: flex;
             flex-direction: column;
             width: 100%;
+            box-sizing: border-box;
+
+            @media (min-width: $breakpoint-tablet) {
+                border: 1px solid rgba(219, 219, 219, 1);
+                background-color: $background-primary;
+            }
                 
             .card-post {
                 display: flex;
@@ -88,6 +151,8 @@ main {
             .card-header {
                 display: flex;
                 padding: 11px 10px;
+                align-items: center;
+                gap: 10px;
             }
                 
             .author-img {
@@ -110,7 +175,7 @@ main {
                 
             .more-icon {
                 cursor: pointer;
-                margin-top: auto;
+                margin-left: auto;
                 height: 3px;
             }
 
@@ -131,7 +196,7 @@ main {
 
         .post-infos {
             padding: 12px 15px;
-        
+
             .post-actions {
                 display: flex;
                 gap: 15px;
@@ -169,22 +234,60 @@ main {
     }
 
     .aside-container {
-        width: 500px;
-        height: 500px;
-        background-color: red;
-        width: 100%;
+       @include simple-flex (flex-start, flex-start, column);
+      
 
-        @media (max-width : $breakpoint-tablet){
-            display: none;
+       @media (max-width: $breakpoint-tablet) {
+           display: none;
+       }
+
+       .user-infos {
+           @include simple-flex (space-between, flex-start, center);
+           width: 100%;
+           margin-bottom: 20px;
+           
+
+           .user-name {
+               font-weight: 600;
+               font-size: 1.4rem;
+               margin-bottom: 1.5px;
+           }
+
+           .user-fullname {
+               color: #8e8e8e;
+               font-size: 1.4rem;
+           }
+
+           .logout-action {
+               margin-left: auto;
+           }
+
+           img {
+               width: 56px;
+               height: 56px;
+               border-radius: 50%;
+           }
         }
 
+        .suggestions-container {
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+            }
+        }
     }
 }
+    
 .tab-bar {
     position: fixed;
     bottom: 0;
     padding-bottom: 32px;
     padding-top: 11.75px;
+
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
 
     .iconeUsuario {
         width: 23px;

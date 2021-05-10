@@ -54,6 +54,49 @@ header {
   padding: 10px 10px;
   box-sizing: border-box;
 }
+header .input-form {
+  background-color: #f2f2f2;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  header .input-form {
+    display: none;
+  }
+}
+@media (min_width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    max-width: 50%;
+    gap: 20px;
+  }
+}
+header .top-bar-desktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  header .top-bar-desktop {
+    display: none;
+    position: relative;
+    top: 0;
+    padding-bottom: 32px;
+    padding-top: 11.75px;
+  }
+}
+header .top-bar-desktop .iconeUsuario {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
 header .logo-img {
   width: 105px;
   height: auto;
@@ -63,20 +106,32 @@ header .action-icon {
   height: auto;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  header .action-icon {
+    display: none;
+  }
+}
 
 main {
-  max-width: 935px;
-  box-sizing: border-box;
   display: flex;
+  max-width: 935px;
   margin: auto;
+  gap: 28px;
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 30px;
+  }
 }
 main .page-container {
-  padding: 20px;
-  width: 50%;
+  width: 70%;
+  margin: auto;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
   main .page-container {
     width: 100%;
+    margin: auto;
   }
 }
 main .page-container .stories-container {
@@ -87,6 +142,13 @@ main .page-container .stories-container {
   /*rola na posição x apenas a sessão e não a página inteira*/
   box-sizing: border-box;
   width: 100%;
+}
+@media (min-width: 768px) {
+  main .page-container .stories-container {
+    border: 1px solid #dbdbdb;
+    background-color: #f2f2f2;
+    margin-bottom: 24px;
+  }
 }
 main .page-container .stories-container .story-item {
   text-align: center;
@@ -114,6 +176,13 @@ main .page-container .feed-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  main .page-container .feed-container {
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+  }
 }
 main .page-container .feed-container .card-post {
   display: flex;
@@ -122,6 +191,8 @@ main .page-container .feed-container .card-post {
 main .page-container .feed-container .card-header {
   display: flex;
   padding: 11px 10px;
+  align-items: center;
+  gap: 10px;
 }
 main .page-container .feed-container .author-img {
   width: 32px;
@@ -138,7 +209,7 @@ main .page-container .feed-container .author-infos .author-location {
 }
 main .page-container .feed-container .more-icon {
   cursor: pointer;
-  margin-top: auto;
+  margin-left: auto;
   height: 3px;
 }
 main .page-container .feed-container .post-img {
@@ -184,15 +255,45 @@ main .page-container .post-infos .likes-info .people-photo .likes-quantity {
   font-size: 1.3rem;
 }
 main .aside-container {
-  width: 500px;
-  height: 500px;
-  background-color: red;
-  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   main .aside-container {
     display: none;
   }
+}
+main .aside-container .user-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .aside-container .user-infos .user-name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1.5px;
+}
+main .aside-container .user-infos .user-fullname {
+  color: #8e8e8e;
+  font-size: 1.4rem;
+}
+main .aside-container .user-infos .logout-action {
+  margin-left: auto;
+}
+main .aside-container .user-infos img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+main .aside-container .suggestions-container img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .tab-bar {
@@ -200,6 +301,11 @@ main .aside-container {
   bottom: 0;
   padding-bottom: 32px;
   padding-top: 11.75px;
+}
+@media (min-width: 768px) {
+  .tab-bar {
+    display: none;
+  }
 }
 .tab-bar .iconeUsuario {
   width: 23px;
