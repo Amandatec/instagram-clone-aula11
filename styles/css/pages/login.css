@@ -141,7 +141,7 @@ header {
   font-size: 1.4rem;
   color: #00000066;
   font-weight: 400;
-  margin-bottom: 133.5px;
+  margin-bottom: 13px;
 }
 .login-container a {
   color: #3797ef;
@@ -156,11 +156,6 @@ header {
   margin-bottom: 9px;
   position: absolute;
   background-color: #060606;
-}
-.login-container .retangulo {
-  width: 375px;
-  height: 79px;
-  margin-bottom: 0;
 }
 .login-container .bottomLogin {
   display: flex;
