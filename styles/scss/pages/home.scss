@@ -11,44 +11,52 @@ header {
     @include simple-flex (space-between, center, row);
     min-height: 44px;
     width: 100%;
-    background-color: $background-primary;
+    background-color: #ffffff;
     padding: 10px 10px;
     box-sizing: border-box;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    
 
+    @media (min-width: $breakpoint-tablet){
+        @include simple-flex (center, center, row);
+        background-color:#ffffff;
+        width: 100%;
+        gap: 250px; 
+        margin: auto;  
+        
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        border-bottom: none;
+    }
     .input-form {
-        background-color:  $background-secundary;
+        background-color:  $background-primary;
         border: 0.5px solid rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             padding: 7px;
             font-size: 1.4rem;
+            text-align: center;
+            
         @media (max-width: $breakpoint-tablet) {
             display: none;          
         }
     }
-    
-    @media (min_width: $breakpoint-tablet){
-        @include simple-flex (center, center, row);
-        background-color:#ffffff;
-        max-width: 50%;
-        gap: 20px;  
-        
-    }
 
     .top-bar-desktop {
         @include simple-flex (space-around, center, row);
-
+        gap: 20px;
+       
+        
         @media (max-width: $breakpoint-tablet) {
             display: none;
-            position: relative;
-            top: 0;
-            padding-bottom: 32px;
-            padding-top: 11.75px;
         }
         .iconeUsuario {
             width: 23px;
             height: 23px;
             border-radius: 50%;
          }
+
+
     }
 
     
@@ -77,18 +85,21 @@ main {
     
     @media (min-width: $breakpoint-tablet) {
         padding-top: 30px; 
+        background-color: $background-primary;
+        width: 100%;
+       
         
     } 
    
    .page-container {
-    width:70%;
+    width :60%;
     margin: auto;
     box-sizing: border-box;
+    margin-bottom: 28px;
 
        @media (max-width: $breakpoint-tablet) {
         width: 100%;
-        margin: auto;
-          
+        margin: auto;    
        }
 
         .stories-container {
@@ -101,10 +112,14 @@ main {
 
             @media (min-width: $breakpoint-tablet) {
                 border: 1px solid rgba(219, 219, 219, 1);
-                background-color: $background-secundary;
+                background-color: #ffffff;
                 margin-bottom: 24px;
             }
                 
+            &::-webkit-scrollbar {
+                display: none;
+              }
+
             .story-item {
                     text-align: center;
                     cursor: pointer;
@@ -140,7 +155,7 @@ main {
 
             @media (min-width: $breakpoint-tablet) {
                 border: 1px solid rgba(219, 219, 219, 1);
-                background-color: $background-primary;
+                background-color: #ffffff;
             }
                 
             .card-post {
@@ -197,6 +212,13 @@ main {
         .post-infos {
             padding: 12px 15px;
 
+            @media (min-width: $breakpoint-tablet) {
+                background-color: #ffffff;
+                border: 1px solid rgba(219, 219, 219, 1);
+                margin-bottom: 50px;
+            }
+
+
             .post-actions {
                 display: flex;
                 gap: 15px;
@@ -235,6 +257,8 @@ main {
 
     .aside-container {
        @include simple-flex (flex-start, flex-start, column);
+       background-color:  $background-primary;
+       width: 40%;
       
 
        @media (max-width: $breakpoint-tablet) {
@@ -242,9 +266,11 @@ main {
        }
 
        .user-infos {
-           @include simple-flex (space-between, flex-start, center);
+           @include simple-flex (space-between,center, center);
            width: 100%;
            margin-bottom: 20px;
+           
+           gap: 10px;
            
 
            .user-name {
@@ -260,6 +286,9 @@ main {
 
            .logout-action {
                margin-left: auto;
+               color: $highLight-color;
+               text-decoration: none;
+               font-size: 1.2rem;
            }
 
            img {
@@ -270,6 +299,16 @@ main {
         }
 
         .suggestions-container {
+
+            .suggestion-tittle {
+                @include simple-flex (space-between, center, row);
+            }
+            .suggestions {
+                @include simple-flex (space-between, center, row);
+                background-color: red;
+            }
+           
+            width: 100%;
             img {
                 width: 32px;
                 height: 32px;
