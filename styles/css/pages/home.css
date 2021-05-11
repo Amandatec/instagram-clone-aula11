@@ -39,7 +39,7 @@ html {
 
 @media (min_width: 768px) {
   body {
-    background-color: #f2f2f2;
+    background-color: #fafafa;
   }
 }
 
@@ -50,31 +50,39 @@ header {
   flex-direction: row;
   min-height: 44px;
   width: 100%;
-  background-color: #fafafa;
+  background-color: #ffffff;
   padding: 10px 10px;
   box-sizing: border-box;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
-header .input-form {
-  background-color: #f2f2f2;
-  border: 0.5px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 7px;
-  font-size: 1.4rem;
-}
-@media (max-width: 768px) {
-  header .input-form {
-    display: none;
-  }
-}
-@media (min_width: 768px) {
+@media (min-width: 768px) {
   header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     background-color: #ffffff;
-    max-width: 50%;
-    gap: 20px;
+    width: 100%;
+    gap: 250px;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    border-bottom: none;
+  }
+}
+header .input-form {
+  background-color: #fafafa;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header .input-form {
+    display: none;
   }
 }
 header .top-bar-desktop {
@@ -82,14 +90,11 @@ header .top-bar-desktop {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  gap: 20px;
 }
 @media (max-width: 768px) {
   header .top-bar-desktop {
     display: none;
-    position: relative;
-    top: 0;
-    padding-bottom: 32px;
-    padding-top: 11.75px;
   }
 }
 header .top-bar-desktop .iconeUsuario {
@@ -121,12 +126,15 @@ main {
 @media (min-width: 768px) {
   main {
     padding-top: 30px;
+    background-color: #fafafa;
+    width: 100%;
   }
 }
 main .page-container {
-  width: 70%;
+  width: 60%;
   margin: auto;
   box-sizing: border-box;
+  margin-bottom: 28px;
 }
 @media (max-width: 768px) {
   main .page-container {
@@ -136,19 +144,22 @@ main .page-container {
 }
 main .page-container .stories-container {
   display: flex;
-  padding: 9px 10px;
-  gap: 20px;
   overflow-x: auto;
   /*rola na posição x apenas a sessão e não a página inteira*/
+  padding: 9px 10px;
+  gap: 20px;
   box-sizing: border-box;
   width: 100%;
 }
 @media (min-width: 768px) {
   main .page-container .stories-container {
     border: 1px solid #dbdbdb;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     margin-bottom: 24px;
   }
+}
+main .page-container .stories-container::-webkit-scrollbar {
+  display: none;
 }
 main .page-container .stories-container .story-item {
   text-align: center;
@@ -181,7 +192,7 @@ main .page-container .feed-container {
 @media (min-width: 768px) {
   main .page-container .feed-container {
     border: 1px solid #dbdbdb;
-    background-color: #fafafa;
+    background-color: #ffffff;
   }
 }
 main .page-container .feed-container .card-post {
@@ -227,6 +238,13 @@ main .page-container .feed-container .end-line {
 main .page-container .post-infos {
   padding: 12px 15px;
 }
+@media (min-width: 768px) {
+  main .page-container .post-infos {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 50px;
+  }
+}
 main .page-container .post-infos .post-actions {
   display: flex;
   gap: 15px;
@@ -259,6 +277,9 @@ main .aside-container {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  background-color: #fafafa;
+  width: 40%;
+  padding-top: 20px;
 }
 @media (max-width: 768px) {
   main .aside-container {
@@ -268,10 +289,11 @@ main .aside-container {
 main .aside-container .user-infos {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: center;
   width: 100%;
   margin-bottom: 20px;
+  gap: 10px;
 }
 main .aside-container .user-infos .user-name {
   font-weight: 600;
@@ -284,16 +306,65 @@ main .aside-container .user-infos .user-fullname {
 }
 main .aside-container .user-infos .logout-action {
   margin-left: auto;
+  color: #3797ef;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 main .aside-container .user-infos img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
-main .aside-container .suggestions-container img {
+main .aside-container .suggestions-container {
+  width: 100%;
+}
+main .aside-container .suggestions-container .suggestion-tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+main .aside-container .suggestions-container .suggestion-tittle a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+main .aside-container .suggestions-container .suggestions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-bottom: 8px;
+}
+main .aside-container .suggestions-container .suggestions .suggestion-name {
+  font-size: 1.2rem;
+  color: #262626;
+}
+main .aside-container .suggestions-container .suggestions .suggestion-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main .aside-container .suggestions-container .suggestions .suggestion-common-followers {
+  font-size: 1.2rem;
+  color: #00000066;
+  font-weight: bold;
+}
+main .aside-container .suggestions-container .suggestions img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  cursor: pointer;
+}
+main .aside-container .suggestions-container .suggestions .follow-action a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3797ef;
+  font-size: 1.2rem;
 }
 
 .tab-bar {
