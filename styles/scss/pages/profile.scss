@@ -2,6 +2,9 @@
 
 .relogio {
     margin: 14px 300px 56px 21px;
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
 }
 
 .barra-topo {
@@ -13,12 +16,73 @@
     justify-self: right;
 }
 
+header {
+    @include simple-flex (space-between, center, row);
+    min-height: 44px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    @media (min-width: $breakpoint-tablet){
+        @include simple-flex (center, center, row);
+        background-color:#ffffff;
+        width: 100%;
+        gap: 250px; 
+        margin: auto;  
+        
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        border-bottom: none;
+    }
+    .input-form {
+        background-color:  $background-primary;
+        border: 0.5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 7px;
+            font-size: 1.4rem;
+            text-align: center;            
+        @media (max-width: $breakpoint-tablet) {
+            display: none;          
+        }
+    }
+
+    .top-bar-desktop {
+        @include simple-flex (space-around, center, row);
+        gap: 20px;      
+        @media (max-width: $breakpoint-tablet) {
+            display: none;
+        }
+        .iconeUsuario {
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+         }
+    }
+
+    .logo-img {
+        width: 105px;
+        height: auto;
+    }
+
+    .action-icon {
+        width: 24px;
+        height: auto;
+        cursor: pointer;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
+}
 .tab-bar {
     position: fixed;
     bottom: 0;
     padding-bottom: 32px;
     padding-top: 11.75px;
-
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
     .iconeUsuario {
         width: 23px;
         height: 23px;
@@ -32,4 +96,7 @@
     margin-top: 20px;
     margin-left: 130px;
     background-color: $background-secundary;
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
 }

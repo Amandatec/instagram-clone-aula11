@@ -1,16 +1,9 @@
 @import "../styles.scss";
 
 body {
-     background-color: $background-secundary;
+     background-color: $background-primary;
 }
 .topo{ 
-     .relogio {
-          margin: 14px 300px 22px 21px;
-          @media (min-width: $breakpoint-tablet) {
-               display: none;
-          }
-     }
-
      .input-box{
          
           display: flex;
@@ -64,8 +57,7 @@ body {
           display: none;
      }
    
-     .options-block {
-         
+     .options-block {        
           border:solid #3c3c432e ;
           border-radius: 6px;
           padding: 8px 10px 7px 10px;
@@ -83,8 +75,6 @@ header {
      padding: 10px 10px;
      box-sizing: border-box;
      border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
-     
- 
      @media (min-width: $breakpoint-tablet){
          @include simple-flex (center, center, row);
          background-color:#ffffff;
@@ -103,8 +93,7 @@ header {
              border-radius: 5px;
              padding: 7px;
              font-size: 1.4rem;
-             text-align: center;
-             
+             text-align: center;            
          @media (max-width: $breakpoint-tablet) {
              display: none;          
          }
@@ -112,8 +101,7 @@ header {
  
      .top-bar-desktop {
          @include simple-flex (space-around, center, row);
-         gap: 20px;
-         
+         gap: 20px;      
          @media (max-width: $breakpoint-tablet) {
              display: none;
          }
@@ -133,12 +121,12 @@ header {
          width: 24px;
          height: auto;
          cursor: pointer;
- 
          @media (min-width: $breakpoint-tablet) {
              display: none;
          }
      }
  }
+
 .galeria-fotos {
      @include simple-flex (space-between, flex-start, row );
      width: 100%;
@@ -158,6 +146,9 @@ header {
      bottom: 0;
      padding-bottom: 32px;
      padding-top: 11.75px;
+     @media (min-width: $breakpoint-tablet) {
+          display: none;
+      }
 
      .iconeUsuario {
           width: 23px;
@@ -172,4 +163,7 @@ header {
      margin-top: 20px;
      align-self: center;
      margin-left: 130px;
+     @media (min-width: $breakpoint-tablet) {
+          display: none;
+      }
 }

@@ -39,6 +39,11 @@ html {
 .relogio {
   margin: 14px 300px 56px 21px;
 }
+@media (min-width: 768px) {
+  .relogio {
+    display: none;
+  }
+}
 
 .barra-topo {
   display: flex;
@@ -53,11 +58,90 @@ html {
   justify-self: right;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 44px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100%;
+    gap: 250px;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    border-bottom: none;
+  }
+}
+header .input-form {
+  background-color: #fafafa;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header .input-form {
+    display: none;
+  }
+}
+header .top-bar-desktop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  header .top-bar-desktop {
+    display: none;
+  }
+}
+header .top-bar-desktop .iconeUsuario {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+header .logo-img {
+  width: 105px;
+  height: auto;
+}
+header .action-icon {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  header .action-icon {
+    display: none;
+  }
+}
+
 .tab-bar {
   position: fixed;
   bottom: 0;
   padding-bottom: 32px;
   padding-top: 11.75px;
+}
+@media (min-width: 768px) {
+  .tab-bar {
+    display: none;
+  }
 }
 .tab-bar .iconeUsuario {
   width: 23px;
@@ -71,6 +155,11 @@ html {
   margin-top: 20px;
   margin-left: 130px;
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .end-line {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=profile.css.map */

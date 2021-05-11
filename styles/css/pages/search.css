@@ -37,17 +37,9 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #fafafa;
 }
 
-.topo .relogio {
-  margin: 14px 300px 22px 21px;
-}
-@media (min-width: 768px) {
-  .topo .relogio {
-    display: none;
-  }
-}
 .topo .input-box {
   display: flex;
   width: 327px;
@@ -211,6 +203,11 @@ header .action-icon {
   padding-bottom: 32px;
   padding-top: 11.75px;
 }
+@media (min-width: 768px) {
+  .tab-bar {
+    display: none;
+  }
+}
 .tab-bar .iconeUsuario {
   width: 23px;
   height: 23px;
@@ -223,6 +220,11 @@ header .action-icon {
   margin-top: 20px;
   align-self: center;
   margin-left: 130px;
+}
+@media (min-width: 768px) {
+  .end-line {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=search.css.map */
