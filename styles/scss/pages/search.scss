@@ -3,10 +3,12 @@
 body {
      background-color: $background-secundary;
 }
-.topo{
-    
+.topo{ 
      .relogio {
           margin: 14px 300px 22px 21px;
+          @media (min-width: $breakpoint-tablet) {
+               display: none;
+          }
      }
 
      .input-box{
@@ -20,6 +22,9 @@ body {
           border-radius: 8px;
           padding-left: 12.75px;
           gap: 9.07px;
+          @media (min-width: $breakpoint-tablet) {
+               display: none;
+          }
          
           .input-img {
                width:13.68px;
@@ -44,6 +49,9 @@ body {
      margin-top: -30px;
      padding-right: 10px
      background-color white;
+     @media (min-width: $breakpoint-tablet) {
+          display: none;
+     }
 }
 
 .options-insta {
@@ -52,9 +60,10 @@ body {
      margin-left: 8px;
      font-size:1.4rem;
      color: $text-color;
+     @media (min-width: $breakpoint-tablet) {
+          display: none;
+     }
    
-     
-
      .options-block {
          
           border:solid #3c3c432e ;
@@ -62,11 +71,74 @@ body {
           padding: 8px 10px 7px 10px;
           border: lightgray solid;
           border-width: thin;     
-          margin-top: 9px;
-          
+          margin-top: 9px;    
      }
 }
 
+header {
+     @include simple-flex (space-between, center, row);
+     min-height: 44px;
+     width: 100%;
+     background-color: #ffffff;
+     padding: 10px 10px;
+     box-sizing: border-box;
+     border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+     
+ 
+     @media (min-width: $breakpoint-tablet){
+         @include simple-flex (center, center, row);
+         background-color:#ffffff;
+         width: 100%;
+         gap: 250px; 
+         margin: auto;  
+         
+     }
+ 
+     @media (max-width: $breakpoint-tablet) {
+         border-bottom: none;
+     }
+     .input-form {
+         background-color:  $background-primary;
+         border: 0.5px solid rgba(0, 0, 0, 0.1);
+             border-radius: 5px;
+             padding: 7px;
+             font-size: 1.4rem;
+             text-align: center;
+             
+         @media (max-width: $breakpoint-tablet) {
+             display: none;          
+         }
+     }
+ 
+     .top-bar-desktop {
+         @include simple-flex (space-around, center, row);
+         gap: 20px;
+         
+         @media (max-width: $breakpoint-tablet) {
+             display: none;
+         }
+         .iconeUsuario {
+             width: 23px;
+             height: 23px;
+             border-radius: 50%;
+          }
+     }
+ 
+     .logo-img {
+         width: 105px;
+         height: auto;
+     }
+ 
+     .action-icon {
+         width: 24px;
+         height: auto;
+         cursor: pointer;
+ 
+         @media (min-width: $breakpoint-tablet) {
+             display: none;
+         }
+     }
+ }
 .galeria-fotos {
      @include simple-flex (space-between, flex-start, row );
      width: 100%;
